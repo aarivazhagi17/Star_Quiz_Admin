@@ -16,7 +16,7 @@ import 'aos/dist/aos.css';
       style={{
         width: "230px",
         fontSize:"20px",
-        position:"fixed",
+        position:"scroll",
         left: "25px",
         marginTop: "100px",
         height: "100vh",
