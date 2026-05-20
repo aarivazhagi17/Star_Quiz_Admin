@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "./AdminLogin.css";
 
 function AdminLogin() {
 
@@ -57,68 +58,50 @@ function AdminLogin() {
 
   return (
 
-    <div
-      style={{
-        textAlign: "center",
-        padding: "80px"
-      }}
-    >
+    <div className="login-container">
 
-      <h1>Admin Login</h1>
+      <div className="login-card">
 
-      <form
-        style={{ marginTop: "30px" }}
-        onSubmit={handleLogin}
-      >
+        <h1 className="login-title">
 
-        <input
-          type="text"
-          placeholder="Enter Username"
-          value={username}
-          onChange={(e) =>
-            setUsername(e.target.value)
-          }
-          style={{
-            padding: "12px",
-            width: "280px",
-            marginBottom: "15px",
-          }}
-        />
+          Admin Login
 
-        <br />
+        </h1>
 
-        <input
-          type="password"
-          placeholder="Enter Password"
-          value={password}
-          onChange={(e) =>
-            setPassword(e.target.value)
-          }
-          style={{
-            padding: "12px",
-            width: "280px",
-            marginBottom: "15px",
-          }}
-        />
+        <form onSubmit={handleLogin}>
 
-        <br />
+          <input
+            type="text"
+            placeholder="Enter Username"
+            value={username}
+            onChange={(e) =>
+              setUsername(e.target.value)
+            }
+            className="login-input"
+          />
 
-        <button
-          type="submit"
-          style={{
-            padding: "12px 25px",
-            background: "black",
-            color: "white",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
+          <input
+            type="password"
+            placeholder="Enter Password"
+            value={password}
+            onChange={(e) =>
+              setPassword(e.target.value)
+            }
+            className="login-input"
+          />
 
-          Login
+          <button
+            type="submit"
+            className="login-btn"
+          >
 
-        </button>
+            Login
 
-      </form>
+          </button>
+
+        </form>
+
+      </div>
 
     </div>
 
