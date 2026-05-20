@@ -20,7 +20,7 @@ function AdminLogin() {
 
       const response = await axios.post(
 
-        "http://localhost:5000/admin-login",
+        `${import.meta.env.VITE_API_URL}/admin-login`,
 
         {
           username,
