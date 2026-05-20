@@ -121,14 +121,19 @@
     .question-container {
     padding:0px;
      margin-top: 260px;
+     margin-right:50px;
     }
     
   .question-card {
     padding: 20px;
+    margin-right: 140px;
   }
 
   .question-title {
     font-size: 26px;
+  }
+  .questions-list{
+    margin-right: 120px;
   }
 
   .list-title {
